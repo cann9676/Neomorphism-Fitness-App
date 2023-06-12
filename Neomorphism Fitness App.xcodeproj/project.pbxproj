@@ -11,6 +11,7 @@
 		83D606052A36B3770073C6DB /* DialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D606042A36B3770073C6DB /* DialView.swift */; };
 		83D606072A36B3790073C6DB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83D606062A36B3790073C6DB /* Assets.xcassets */; };
 		83D6060A2A36B3790073C6DB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83D606092A36B3790073C6DB /* Preview Assets.xcassets */; };
+		83D606142A3778730073C6DB /* DialHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D606132A3778730073C6DB /* DialHeaderView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		83D606042A36B3770073C6DB /* DialView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DialView.swift; sourceTree = "<group>"; };
 		83D606062A36B3790073C6DB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		83D606092A36B3790073C6DB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		83D606132A3778730073C6DB /* DialHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DialHeaderView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +73,7 @@
 			isa = PBXGroup;
 			children = (
 				83D606042A36B3770073C6DB /* DialView.swift */,
+				83D606132A3778730073C6DB /* DialHeaderView.swift */,
 			);
 			path = Dial;
 			sourceTree = "<group>";
@@ -145,6 +148,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				83D606142A3778730073C6DB /* DialHeaderView.swift in Sources */,
 				83D606052A36B3770073C6DB /* DialView.swift in Sources */,
 				83D606032A36B3770073C6DB /* Neomorphism_Fitness_AppApp.swift in Sources */,
 			);
