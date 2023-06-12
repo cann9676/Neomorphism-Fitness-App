@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		83D606032A36B3770073C6DB /* Neomorphism_Fitness_AppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D606022A36B3770073C6DB /* Neomorphism_Fitness_AppApp.swift */; };
-		83D606052A36B3770073C6DB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D606042A36B3770073C6DB /* ContentView.swift */; };
+		83D606052A36B3770073C6DB /* DialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D606042A36B3770073C6DB /* DialView.swift */; };
 		83D606072A36B3790073C6DB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83D606062A36B3790073C6DB /* Assets.xcassets */; };
 		83D6060A2A36B3790073C6DB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83D606092A36B3790073C6DB /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
@@ -16,7 +16,7 @@
 /* Begin PBXFileReference section */
 		83D605FF2A36B3770073C6DB /* Neomorphism Fitness App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Neomorphism Fitness App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		83D606022A36B3770073C6DB /* Neomorphism_Fitness_AppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Neomorphism_Fitness_AppApp.swift; sourceTree = "<group>"; };
-		83D606042A36B3770073C6DB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		83D606042A36B3770073C6DB /* DialView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DialView.swift; sourceTree = "<group>"; };
 		83D606062A36B3790073C6DB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		83D606092A36B3790073C6DB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -51,8 +51,8 @@
 		83D606012A36B3770073C6DB /* Neomorphism Fitness App */ = {
 			isa = PBXGroup;
 			children = (
+				83D606102A36B3EB0073C6DB /* Dial */,
 				83D606022A36B3770073C6DB /* Neomorphism_Fitness_AppApp.swift */,
-				83D606042A36B3770073C6DB /* ContentView.swift */,
 				83D606062A36B3790073C6DB /* Assets.xcassets */,
 				83D606082A36B3790073C6DB /* Preview Content */,
 			);
@@ -65,6 +65,14 @@
 				83D606092A36B3790073C6DB /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		83D606102A36B3EB0073C6DB /* Dial */ = {
+			isa = PBXGroup;
+			children = (
+				83D606042A36B3770073C6DB /* DialView.swift */,
+			);
+			path = Dial;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +145,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				83D606052A36B3770073C6DB /* ContentView.swift in Sources */,
+				83D606052A36B3770073C6DB /* DialView.swift in Sources */,
 				83D606032A36B3770073C6DB /* Neomorphism_Fitness_AppApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
