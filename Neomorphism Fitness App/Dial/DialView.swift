@@ -15,7 +15,7 @@ struct DialView: View {
             //ok to keep padding in main body view. How Apple does it
             //best to spilt up sections into structs
             
-            Dial()
+            Dial(goal: 10000, steps: 7_540)
                 .padding()
             Spacer()
         }
@@ -27,8 +27,15 @@ struct DialView: View {
 
 struct Dial: View {
     
-    let shadowOffset: CGFloat = 8
-    let shadowRadius: CGFloat = 9
+    let goal: Int
+    let steps: Int
+    
+    private let shadowOffset: CGFloat = 8
+    private let shadowRadius: CGFloat = 9
+    private let shadowColor: Color = Color(red: 0.871, green: 0.871, blue: 0.871)
+    private let hightlightColor: Color = .white
+    
+    
     
     var body: some View {
         GeometryReader { geo in
@@ -54,10 +61,18 @@ struct Dial: View {
                     
                     Circle().stroke(style: StrokeStyle(lineWidth: 12))
                         .padding(20)
+                        .foregroundColor(.foregroundGrey)
                 }
                 .padding()
                 
-                
+                VStack {
+                    Text("Goal: \(goal)")
+                    Text("\(steps)")
+                        .font(.title)
+                        .bold()
+                        .padding()
+                    Text("Steps")
+                }
             }
             .foregroundColor(.accentColor)
         }
@@ -74,5 +89,5 @@ struct ContentView_Previews: PreviewProvider {
 extension Color {
     
     static let backgroundGrey =  Color(red: 0.922, green: 0.925, blue: 0.941)
-    
+    static let foregroundGrey = Color(red: 0.871, green: 0.871, blue: 0.871)
 }
