@@ -26,6 +26,10 @@ struct DialView: View {
 }
 
 struct Dial: View {
+    
+    let shadowOffset: CGFloat = 8
+    let shadowRadius: CGFloat = 9
+    
     var body: some View {
         GeometryReader { geo in
             ZStack {
@@ -35,10 +39,25 @@ struct Dial: View {
                             .frame(width: 1)
                             .rotationEffect(.degrees(Double(index)))
                         
+                        
                     }
                 }
                 
                 Circle().fill(Color.backgroundGrey)
+                    .shadow(color: .gray, radius: shadowRadius, x: shadowOffset, y: shadowOffset)
+                    .shadow(color: .white, radius: shadowRadius, x: -shadowOffset, y: -shadowOffset)
+                
+                ZStack {
+                    Circle().fill(Color.backgroundGrey)
+                        .shadow(color: .gray, radius: shadowRadius, x: shadowOffset, y: shadowOffset)
+                        .shadow(color: .white, radius: shadowRadius, x: -shadowOffset, y: -shadowOffset)
+                    
+                    Circle().stroke(style: StrokeStyle(lineWidth: 12))
+                        .padding(20)
+                }
+                .padding()
+                
+                
             }
             .foregroundColor(.accentColor)
         }
